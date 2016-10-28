@@ -1,0 +1,38 @@
+{% extends "henrylab/base.html" %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="header">
+            <h3><strong>Contact Us Today</strong> </h3>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <p>We're friedly and available to chat. Reach out to us anytime and we'll happily answer your questions.</p>
+            <p>For support or any general question</p>
+            <p>Email us at: henrymbuguak@gmail.com</p>
+            <div class="container">
+                <div class="row">
+                    <h4><strong>Call us</strong> </h4>
+                    <p>
+                        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> +254728851119
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p><strong>Have a question?</strong></p>
+            <p>Get in Touch</p>
+            <form method="post" action=".">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-info" type="submit">send message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

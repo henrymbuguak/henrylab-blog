@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="{% static 'henrylab/dist/img/icon.png' %}">
+        <title>HenryLab</title>
+        <!-- Bootstrap minified -->
+        <link rel="stylesheet" type="text/css" href="{% static 'henrylab/dist/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'henrylab/dist/css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'henrylab/dist/css/jumbotron.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'henrylab/dist/css/henrylab.css' %}">
+        
+        
+    </head>
+    <body>
+        
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>Menu<i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="/">HenryLab&trade;</a>
+                </div>
+                
+                <!--  Target data for collapse in small screen -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/">Home</a> </li>
+                        <li><a href="/service">Service</a> </li>
+                        <li><a href="/blog">Blog</a> </li>
+                        <li><a href="/about/">About</a> </li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> User </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Login</a> </li>
+                                <li><a href="#">Sign up</a> </li>
+                                <li><a href="#">Logout</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- End Container Fluid -->
+        </nav>
+        <div class="jumbotron">
+            <div class="container text-center">
+                <p></p>
+                <h1 >Welcome to HenryLab </h1>
+                
+                <h3>Your Technical Partner Towards Web Success</h3>
+                <h2>A Mint of Creativity</h2>
+                <div class="btn-group">
+                    <a class="btn btn-info btn-lg" href="/blog/">Learn More</a>
+                    <a class="btn btn-default btn-lg" href="#">Service</a>
+                    <a class="btn btn-info btn-lg" href="#">Download App</a>
+                </div>
+                
+            </div> <!-- End container -->
+        </div> <!-- End Jumbotron -->
+        
+        <div class="container">
+            <div class="header">
+                {% block head %} {% endblock %} 
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                <div class="col-md-3 offset-md-1 blog-siderbar">
+                    {% block sidebar %}
+                    {% endblock %}
+                </div> <!-- End sidebar -->
+            </div> <!-- End Row -->
+        </div> <!-- End Container -->
+    
+        
+        <footer class="footer" style="margin: 5em 0em 1em 0em;">
+            <div class="container-fluid" style="padding-left: 0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="wrapper">
+                            <h4><strong>Our Version Control Links</strong></h4>
+                            <ol class="list-unstyled">
+                                <li><a href="#">GitHub</a> </li>
+                                <li><a href="#">Bitbucket</a> </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="wrapper">
+                            <h4><strong>Connect With Us</strong></h4>
+                            <ol class="list-unstyled">
+                                
+                                <li><a href="#">Facebook</a> </li>
+                                <li><a href="#">Twitter</a> </li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                </div> <!-- End row -->
+                <div class="row" style="text-align: center; padding: 1em; margin: 1em 0; background-color:#ecf0f1">
+                    <p>Copyright &copy; {% now "Y" %} HenryLab, Inc. All Right Reserved. </p>
+                </div>
+            </div> <!-- End container -->
+        </footer> <!-- End footer -->
+        <!-- Minified Jquery -->
+        <script src="{% static 'henrylab/dist/js/jquery.min.js' %}"></script>
+        
+        <!-- Minified Bootstrap JS -->
+        <script src="{% static 'henrylab/dist/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>

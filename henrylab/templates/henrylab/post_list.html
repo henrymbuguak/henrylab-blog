@@ -1,0 +1,26 @@
+{% extends "henrylab/base.html" %}
+{% block head %}
+<h1>Our Blog</h1>
+{% endblock %}
+
+{% block content %}
+
+
+{% for post in posts %}
+<div class="post">
+    <h1><a href="{% url 'post_detail' pk=post.pk %}"> {{ post.title }} </a> </h1>
+    <p>{{ post.body|truncatewords:"100" }}<a href="{% url 'post_detail' pk=post.pk %}"> read more</a> </p>
+</div>
+{% endfor %}
+{% endblock %}
+
+{% block sidebar %}
+<h4>Recent Posts</h4>
+<div class="post">
+    {% for post in posts %}
+    <ol class="list-unstyled">
+        <li><a href="{% url 'post_detail' pk=post.pk %}">{{post.slug}} </a> </li>
+    </ol>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+.service-header {
+    text-align: center;
+    margin-top: 1em;
+    background-color: #ecf0f1;
+    padding: .5m 0;
+    border-radius: .3em;
+}
+.service {
+    border-radius: .3m;
+    background-color: #34495e;
+    text-align: center;
+    padding: 3em 2em 1em 2em;
+    color: #fff;
+}
+.service .glyphicon {
+    font-size: 5em;
+}
+
+.glyphicon.glyphicon-user {
+    font-size: 1.3em;
+    color: black;
+}
+.glyphicon.glyphicon-phone {
+    font-size: 1.3em;
+    color: black;
+}

@@ -1,0 +1,16 @@
+{% extends "henrylab/base.html" %}
+
+{% block content %}
+<div class="post">
+   
+    <h1>{{ post.title }} </h1>
+    <p>{{ post.body }} </p>
+     {% if post.author %}
+    <div class="date">
+      <p>Author: {{post.author}}</p>  
+    </div>
+    {% endif %}
+</div>
+
+
+{% endblock %}

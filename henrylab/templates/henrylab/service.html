@@ -1,0 +1,39 @@
+{% extends "henrylab/base.html" %}
+{% load static %}
+{% block head %}
+<div class="container">
+    <div class="row">
+        <div class="header text-center">
+            <h2 >Our Services</h2>
+        </div>
+    </div><!-- End row -->
+</div> <!-- End container -->
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="service">
+                <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                <h3><strong>Web Development</strong> </h3>
+                <p> Henrylab provide a specialized web design  depending on requirements of the system. We focus mainly in use of content management system and Django Web Framework to develop webistes.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                <h3><strong>Full Stack Development</strong> </h3>
+                <p>HenryLab create complex website using Python and Django Web Framework. This gives us more control on development product life cycle, proper testing and python is among the best languages. </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="service">
+                <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                <h3><strong>Front End Development</strong> </h3>
+                <p>HenryLab uses Twitter BootStrap to create responsive site, this ensure our clients have a website that is mobile friendly. BootStrap promote quick, clean and highly reusable applications.</p>
+            </div>
+        </div>
+    </div> <!-- End row -->
+</div><!-- End container -->
+{% endblock %}

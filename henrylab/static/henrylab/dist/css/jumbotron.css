@@ -1,0 +1,44 @@
+body {
+    padding-top: 50px;
+}
+
+.jumbotron {
+             height: 400px;
+             background: #000 url("header.jpeg") no-repeat center
+             center;           
+             background-size:100% 100%;
+             -moz-background-size: 100% 100%;
+             -webkit-background-size: 100% 100%;
+             -o-background-size: 100% 100%;
+             color: #fff; //change text color
+             
+             
+       }
+.theme-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #dee0e1;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+.glyphicon {
+    font-size: 30px;
+    color: #52cbfd;
+}
+.wrapper {
+    background-color: #ecf0f1;
+    padding: 1em 2em;
+}
+
+input {
+    display: block;
+}
+form {
+    width:450px;
+    padding: 20px;
+    border: 0px solid #270644;
+}
+
